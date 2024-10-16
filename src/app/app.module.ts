@@ -7,17 +7,24 @@ import { HeaderComponent } from './componenet/header/header.component';
 import { ProductComponent } from './componenet/product/product.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CartComponent } from './componenet/cart/cart.component';
+import { LoginComponent } from './componenet/login/login.component';
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
